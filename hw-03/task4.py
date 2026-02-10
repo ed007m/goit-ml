@@ -16,7 +16,19 @@ def get_upcoming_birthdays(users: list[dict[str, str]]) -> list[dict[str, str]]:
 
     upcoming = []
     for user in users:
-        bd = datetime.strptime(user['birthday'], "%Y.%m.%d").date()
+
+        if not isinstance(user, dict):
+            continue
+        if "name" not in user or "birthday" not in user:
+            continue
+        if not isinstance(user["name"], str) or not isinstance(user["birthday"], str):
+            continue
+
+        try:
+            bd = datetime.strptime(user['birthday'], "%Y.%m.%d").date()
+        except ValueError:
+            continue
+
         bd_this_year = bd.replace(year=today.year)
         if bd_this_year < today:
             bd_this_year = bd_this_year.replace(year=today.year + 1)
