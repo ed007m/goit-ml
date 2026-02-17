@@ -1,0 +1,6 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+
+Invalid Line Without Comma
+Bad Data,not_a_number,additional_column

@@ -1,5 +1,5 @@
 import unittest
-from task2 import get_numbers_ticket
+from src.hw_03.task2 import get_numbers_ticket
 
 class TestGetNumbersTicket(unittest.TestCase):
 

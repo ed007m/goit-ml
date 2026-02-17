@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timedelta
-from task1 import get_days_from_today
+from src.hw_03.task1 import get_days_from_today
 
 class TestGetDaysFromToday(unittest.TestCase):
 

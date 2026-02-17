@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime, date
 from unittest.mock import patch
-from task4 import get_upcoming_birthdays
+from src.hw_03.task4 import get_upcoming_birthdays
 
 class TestGetUpcomingBirthdays(unittest.TestCase):
 

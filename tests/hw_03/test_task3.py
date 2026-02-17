@@ -1,5 +1,5 @@
 import unittest
-from task3 import normalize_phone
+from src.hw_03.task3 import normalize_phone
 
 class TestNormalizePhone(unittest.TestCase):
 
